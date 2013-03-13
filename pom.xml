@@ -73,7 +73,7 @@
   <scm>
     <connection>scm:git:git@github.com:rundeck-plugins/rundeck-plugins-parent.git</connection>
     <developerConnection>scm:git:git@github.com:rundeck-plugins/rundeck-plugins-parent.git</developerConnection>
-    <url>https://github.com/rundeck-plugins/rundeck-plugins-parent</url>
+    <url>git@github.com:rundeck-plugins/rundeck-plugins-parent.git</url>
   </scm>
 
 </project>
