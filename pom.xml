@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>oss-parent</artifactId>
+    <groupId>org.sonatype.oss</groupId>
+    <version>7</version>
+  </parent>
+
+  <groupId>org.rundeck-plugins</groupId>
+  <artifactId>rundeck-plugins-parent</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>rundeck-plugins-parent</name>
+  <url>http://rundeck.org/plugins/index.html</url>
+  <inceptionYear>2011</inceptionYear>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.0</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <!-- upgrade from 2.1 to 2.4 to pick up latest git fixes -->
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.rundeck</groupId>
+      <artifactId>rundeck-core</artifactId>
+      <version>${rundeckVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <rundeckVersion>1.5</rundeckVersion>
+  </properties>
+
+  <developers>
+    <developer>
+      <id>stagrlee</id>
+      <name>Lee Thompson</name>
+      <email>stagr.lee@gmail.com</email>
+    </developer>
+    <developer>
+      <id>gschueler</id>
+      <name>Greg Schueler</name>
+      <email>greg@dtosolutions.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:rundeck-plugins/rundeck-plugins-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:rundeck-plugins/rundeck-plugins-parent.git</developerConnection>
+    <url>https://github.com/rundeck-plugins/rundeck-plugins-parent</url>
+  </scm>
+
+</project>
