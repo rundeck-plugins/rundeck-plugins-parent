@@ -4,7 +4,7 @@
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
-    <version>7</version>
+    <version>9</version>
   </parent>
 
   <groupId>org.rundeck-plugins</groupId>
@@ -24,7 +24,7 @@
   </licenses>
 
   <properties>
-    <rundeckVersion>1.5.3</rundeckVersion>
+    <rundeckVersion>2.3.2</rundeckVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -43,7 +43,7 @@
           <!-- upgrade from 2.1 to 2.4 to pick up latest git fixes -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.4.1</version>
+          <version>2.5.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -67,7 +67,7 @@
     <developer>
       <id>gschueler</id>
       <name>Greg Schueler</name>
-      <email>greg@dtosolutions.com</email>
+      <email>greg@simplifyops.com</email>
     </developer>
   </developers>
   <scm>
